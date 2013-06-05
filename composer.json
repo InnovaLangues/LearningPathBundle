@@ -2,14 +2,13 @@
     "name": "innova-langues/learning-path-bundle",
     "description": "Learning path bundle",
     "keywords": ["Claroline","Learning path bundle"],
-    "homepage": "http://",
+    "homepage": "http://lansad.u-grenoble3.fr/",
     "type": "library",
     "license": "",
     "authors": [
         {
-            "name": "Innova Langues",
-            "email": "",
-            "homepage": ""
+            "name": "Arnaud Bey",
+            "email": "arnaud.bey@u-grenoble3.fr"
         }
     ],
     "require": {
