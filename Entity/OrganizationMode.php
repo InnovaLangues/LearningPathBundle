@@ -5,12 +5,12 @@ namespace Innova\LearningPathBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Step
+ * OrganizationMode
  *
- * @ORM\Table(name="inl_step")
+ * @ORM\Table(name="inl_organisation_mode")
  * @ORM\Entity
  */
-class Step
+class OrganizationMode
 {
     /**
      * @var integer
@@ -28,13 +28,6 @@ class Step
      */
     private $name;
 
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="iteration", type="integer")
-     */
-    private $iteration;
-
 
     /**
      * Get id
@@ -50,7 +43,7 @@ class Step
      * Set name
      *
      * @param string $name
-     * @return Step
+     * @return OrganizationMode
      */
     public function setName($name)
     {
@@ -67,29 +60,5 @@ class Step
     public function getName()
     {
         return $this->name;
-    }
-
-
-    /**
-     * Set iteration
-     *
-     * @param integer $iteration
-     * @return Step
-     */
-    public function setIteration($iteration)
-    {
-        $this->iteration = $iteration;
-
-        return $this;
-    }
-
-    /**
-     * Get iteration
-     *
-     * @return integer
-     */
-    public function getIteration()
-    {
-        return $this->iteration;
     }
 }

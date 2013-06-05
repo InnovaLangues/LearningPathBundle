@@ -21,12 +21,33 @@ class AbstractEntityType
      */
     private $id;
 
-     /**
+    /**
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255)
      */
     private $name;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="text")
+     */
+    private $description;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="class", type="string", length=255)
+     */
+    private $class;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="subClass", type="string", length=255)
+     */
+    private $subClass;
 
 
     /**
@@ -60,5 +81,74 @@ class AbstractEntityType
     public function getName()
     {
         return $this->name;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     * @return AbstractEntityType
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string 
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Set class
+     *
+     * @param string $class
+     * @return AbstractEntityType
+     */
+    public function setClass($class)
+    {
+        $this->class = $class;
+    
+        return $this;
+    }
+
+    /**
+     * Get class
+     *
+     * @return string 
+     */
+    public function getClass()
+    {
+        return $this->class;
+    }
+
+    /**
+     * Set subClass
+     *
+     * @param string $subClass
+     * @return AbstractEntityType
+     */
+    public function setSubClass($subClass)
+    {
+        $this->subClass = $subClass;
+    
+        return $this;
+    }
+
+    /**
+     * Get subClass
+     *
+     * @return string 
+     */
+    public function getSubClass()
+    {
+        return $this->subClass;
     }
 }

@@ -35,6 +35,13 @@ class Path
      */
     private $description;
 
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="is_pattern", type="boolean")
+     */
+    private $is_pattern;
+
 
     /**
      * Get id
@@ -90,5 +97,51 @@ class Path
     public function getDescription()
     {
         return $this->description;
+    }
+
+    /**
+     * Set is_pattern
+     *
+     * @param boolean $is_pattern
+     * @return Path
+     */
+    public function setBoolean($is_pattern)
+    {
+        $this->is_pattern = $is_pattern;
+
+        return $this;
+    }
+
+    /**
+     * Get is_pattern
+     *
+     * @return boolean
+     */
+    public function getBoolean()
+    {
+        return $this->is_pattern;
+    }
+
+    /**
+     * Set is_pattern
+     *
+     * @param boolean $isPattern
+     * @return Path
+     */
+    public function setIsPattern($isPattern)
+    {
+        $this->is_pattern = $isPattern;
+    
+        return $this;
+    }
+
+    /**
+     * Get is_pattern
+     *
+     * @return boolean 
+     */
+    public function getIsPattern()
+    {
+        return $this->is_pattern;
     }
 }
