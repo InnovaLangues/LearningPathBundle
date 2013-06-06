@@ -32,7 +32,7 @@ class Step
     /**
      * @var integer
      *
-     * @ORM\Column(name="iteration", type="integer")
+     * @ORM\Column(name="iteration", type="integer", nullable=true)
      */
     private $iteration;
 
@@ -154,7 +154,7 @@ class Step
     /**
      * Get lft
      *
-     * @return integer 
+     * @return integer
      */
     public function getLft()
     {
@@ -177,7 +177,7 @@ class Step
     /**
      * Get lvl
      *
-     * @return integer 
+     * @return integer
      */
     public function getLvl()
     {
@@ -200,7 +200,7 @@ class Step
     /**
      * Get rgt
      *
-     * @return integer 
+     * @return integer
      */
     public function getRgt()
     {
@@ -223,7 +223,7 @@ class Step
     /**
      * Get root
      *
-     * @return integer 
+     * @return integer
      */
     public function getRoot()
     {
@@ -246,7 +246,7 @@ class Step
     /**
      * Get parent
      *
-     * @return \Innova\LearningPathBundle\Entity\Step 
+     * @return \Innova\LearningPathBundle\Entity\Step
      */
     public function getParent()
     {
@@ -279,7 +279,7 @@ class Step
     /**
      * Get children
      *
-     * @return \Doctrine\Common\Collections\Collection 
+     * @return \Doctrine\Common\Collections\Collection
      */
     public function getChildren()
     {

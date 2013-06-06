@@ -14,11 +14,33 @@ class LoadOrganizationModeData implements FixtureInterface
     public function load(ObjectManager $manager)
     {
         $organizationMode = new OrganizationMode();
-        $organizationMode->setName('admin');
+        $organizationMode->setName('ordered_sequence');
+
         $manager->persist($organizationMode);
 
         $organizationMode = new OrganizationMode();
-        $organizationMode->setName('admin2');
+        $organizationMode->setName('non_ordered_sequence');
+
+        $manager->persist($organizationMode);
+
+        $organizationMode = new OrganizationMode();
+        $organizationMode->setName('parallel');
+
+        $manager->persist($organizationMode);
+
+        $organizationMode = new OrganizationMode();
+        $organizationMode->setName('interlace');
+
+        $manager->persist($organizationMode);
+
+        $organizationMode = new OrganizationMode();
+        $organizationMode->setName('alternative');
+
+        $manager->persist($organizationMode);
+
+        $organizationMode = new OrganizationMode();
+        $organizationMode->setName('iteration');
+
         $manager->persist($organizationMode);
 
         $manager->flush();
