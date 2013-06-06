@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Step
  *
  * @ORM\Table(name="inl_step")
+ * @Gedmo\Tree(type="nested")
  * @ORM\Entity(repositoryClass="Gedmo\Tree\Entity\Repository\NestedTreeRepository")
  */
 class Step
